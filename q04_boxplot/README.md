@@ -1,4 +1,4 @@
-# time plot using matplotlib
+# Time plot using matplotlib
 
 Visualizing is the key to extract insights from the data. We will use matplotlib box plot command to visualize the data.
 
@@ -38,3 +38,9 @@ Function should take list of time values and predictor variable as input and out
 
 ### Returns:
 This function plots a time_plot using matplotlib plot command. This function returns nothing.
+
+* Note 
+return Image should look like this
+
+
+https://github.com/commit-live-students/time_series_day_02_project/blob/master/images/q04_boxplot.png
