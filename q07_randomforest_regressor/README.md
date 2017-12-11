@@ -7,6 +7,7 @@
 * Extract the values of the train and test for only the given column names.
 * Fits a RandomForest model with default parameters model on it.
 * Returns the mean RMSE.
+* Set random_state equal to **9** inside the function parameter.
 
 ### Parameters:
 
@@ -20,4 +21,4 @@
 
 | Return | dtype | description |
 | --- | --- | --- |
-| rmse | float | RMSE of the linear regression model |
+| rmse | float | RMSE of the Random Forest regression model |
