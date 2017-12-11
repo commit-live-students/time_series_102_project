@@ -10,7 +10,8 @@ Visualizing is the key to extract insights from the data. We will use matplotlib
 - Convert the time_col to datetime format using pandas to_datetime api
 - Extract the **hour** from time_col (int)
 - Extract the **month** from time_col (int)
-- 
+- Extracts the values for the **Demand** column hourwise and append it to a list.
+- Plot the same in a boxplot.
 
 
 ### Parameters:
