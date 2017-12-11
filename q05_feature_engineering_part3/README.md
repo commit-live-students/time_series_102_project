@@ -26,3 +26,9 @@ Function should take list of time values and predictor variable as input and out
 
 ### Returns:
 None.
+
+* Note -
+
+Return Image should look like this 
+
+https://github.com/commit-live-students/time_series_day_02_project/blob/master/images/q05_feature_engineering_part3.png
