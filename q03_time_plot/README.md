@@ -25,4 +25,5 @@ This function plots a time_plot using matplotlib plot command. This function ret
 
 * Note - 
 return value should look like 
+
 https://github.com/commit-live-students/time_series_day_02_project/blob/master/images/q03_time_plot.png
