@@ -7,7 +7,7 @@
 * Extract the values of the train and test for only the given column names.
 * Fits a Gradient Boosting regressor with default parameters model on it.
 * Returns the mean RMSE.
-* Set random state to **9**.
+* Set random_state equal to **9** inside the function parameter.
 
 ### Parameters:
 
