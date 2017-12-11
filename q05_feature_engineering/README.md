@@ -19,3 +19,8 @@
 ### Returns:
 
 A plot.
+
+* Note -
+Return image should look like this
+
+https://github.com/commit-live-students/time_series_day_02_project/tree/master/images
