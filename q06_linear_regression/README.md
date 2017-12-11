@@ -7,6 +7,7 @@
 * Extract the values of the train and test for only the given column names.
 * Fits a LinearRegression with default parameters model on it.
 * Returns the mean RMSE.
+* Set random_state equal to **9** inside the function parameter.
 
 ### Parameters:
 
