@@ -23,4 +23,4 @@ A plot.
 * Note -
 Return image should look like this
 
-https://github.com/commit-live-students/time_series_day_02_project/tree/master/images
+https://github.com/commit-live-students/time_series_day_02_project/blob/master/images/q05_feature_engineering.png
