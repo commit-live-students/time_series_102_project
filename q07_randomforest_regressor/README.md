@@ -1,4 +1,4 @@
-# Fitting your first linear regression model
+# Fitting your first RandomForest regressor model
 
 ## Let's write a function `q07_randomforest_regressor()` that
 * Takes as input the path and column names.
