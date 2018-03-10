@@ -1,5 +1,5 @@
 import unittest
-from inspect import getargspec
+from inspect import getfullargspec
 from ..build import q08_gradientboosting_regressor as student
 from greyatomlib.time_series_day_02_project.q08_gradientboosting_regressor.build import q08_gradientboosting_regressor as original
 import dill
@@ -25,11 +25,11 @@ class Testing(unittest.TestCase):
     #  Check the arguements of the function
     def test_timeseries(self):
         # Input parameters tests
-        args = getargspec(student)
+        args = getfullargspec(student)
         self.assertEqual(len(args[0]), 3, "Expected argument(s) %d, Given %d" % (3, len(args)))
 
     def test_timeseries_default(self):
-        args = getargspec(student)
+        args = getfullargspec(student)
         self.assertEqual(args[3], (fe,9), "Expected default values do not match given default values")
 
 
