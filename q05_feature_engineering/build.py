@@ -1,6 +1,8 @@
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+plt.switch_backend('agg')
 from greyatomlib.time_series_day_02_project.q01_load_data.build import q01_load_data
 
 def q05_feature_engineering(path):
@@ -15,5 +17,4 @@ def q05_feature_engineering(path):
     plt.ylabel('Demand')
     plt.title('Temperature vs Demand')
     #plt.show()   
-
 
