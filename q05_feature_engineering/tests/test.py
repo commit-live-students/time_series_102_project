@@ -1,5 +1,5 @@
 import unittest
-from inspect import getargspec
+from inspect import getfullargspec
 from ..build import q05_feature_engineering as student
 from greyatomlib.time_series_day_02_project.q05_feature_engineering.build import q05_feature_engineering as original
 import dill
@@ -25,10 +25,10 @@ class Testing(unittest.TestCase):
     #  Check the arguements of the function
     def test_timeseries(self):
         # Input parameters tests
-        args = getargspec(student)
+        args = getfullargspec(student)
         self.assertEqual(len(args[0]), 1, "Expected argument(s) %d, Given %d" % (1, len(args)))
 
     def test_timeseries_default(self):
-        args = getargspec(student)
+        args = getfullargspec(student)
         self.assertEqual(args[3], (None), "Expected default values do not match given default values")
   
