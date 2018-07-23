@@ -1,6 +1,7 @@
 import unittest
 from inspect import getfullargspec
 from ..build import q05_feature_engineering_part2 as student
+from ..build import q01_load_data as student
 from greyatomlib.time_series_day_02_project.q05_feature_engineering_part2.build import q05_feature_engineering_part2 as original
 import dill
 import pandas as pd
