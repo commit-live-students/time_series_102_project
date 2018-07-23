@@ -5,5 +5,4 @@ from greyatomlib.time_series_day_02_project.q01_load_data.build import q01_load_
 plt.switch_backend('agg')
 
 
-def q05_feature_engineering_part2():
     
