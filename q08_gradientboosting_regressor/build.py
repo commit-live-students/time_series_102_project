@@ -7,6 +7,4 @@ from greyatomlib.time_series_day_02_project.q05_feature_engineering_part4.build 
 from greyatomlib.time_series_day_02_project.q02_data_splitter.build import q02_data_splitter
 
 fe =  ["WorkDay", "Peakhours", "Peakmonths"]
-
-def q08_gradientboosting_regressor():
     
