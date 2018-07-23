@@ -8,5 +8,5 @@ from greyatomlib.time_series_day_02_project.q02_data_splitter.build import q02_d
 
 fe =  ["WorkDay", "Peakhours", "Peakmonths"]
 
-def q06_linear_regression():
+
     
