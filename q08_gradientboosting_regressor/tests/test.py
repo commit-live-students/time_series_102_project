@@ -19,7 +19,7 @@ class Testing(unittest.TestCase):
         # Input parameters tests
         args_student = getfullargspec(student)
         args_original = getfullargspec(original)
-        self.assertEqual(len(args_student[0]),len(args_original[0]), "Expected argument(s) %d, Given %d" % (len(args_original[0]),len(args_student[0]))
+        self.assertEqual(len(args_student[0]),len(args_original[0]), "Expected argument(s) %d, Given %d" % (len(args_original[0]),len(args_student[0])))
 
     def test_timeseries_default(self):
         args_student = getfullargspec(student)
