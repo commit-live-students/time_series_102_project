@@ -1,7 +1,7 @@
 import unittest
 from inspect import getfullargspec
 from ..build import q08_gradientboosting_regressor as student
-from greyatomlib.time_series_day_02_project.q08_gradientboosting_regressor.build import q08_gradientboosting_regressor as originalx
+from greyatomlib.time_series_day_02_project.q08_gradientboosting_regressor.build import q08_gradientboosting_regressor as original
 import pandas as pd
 from pandas.util.testing import assert_frame_equal
 fe =  ["WorkDay", "Peakhours", "Peakmonths"]
