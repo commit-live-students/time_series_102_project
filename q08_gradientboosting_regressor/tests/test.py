@@ -1,23 +1,15 @@
 import unittest
 from inspect import getfullargspec
 from ..build import q08_gradientboosting_regressor as student
-from greyatomlib.time_series_day_02_project.q08_gradientboosting_regressor.build import q08_gradientboosting_regressor as original
-import dill
+from greyatomlib.time_series_day_02_project.q08_gradientboosting_regressor.build import q08_gradientboosting_regressor as originalx
 import pandas as pd
 from pandas.util.testing import assert_frame_equal
 fe =  ["WorkDay", "Peakhours", "Peakmonths"]
 
 class Testing(unittest.TestCase):
     def setUp(self):
-        with open('q08_gradientboosting_regressor/tests/user_sol.pkl', 'wb') as f:
-            dill.dump(student, f)
-
-        with open('q08_gradientboosting_regressor/tests/test_sol.pkl', 'wb') as f:
-            dill.dump(original, f)
-        with open('q08_gradientboosting_regressor/tests/user_sol.pkl', 'rb') as f:
-            self.student_func = dill.load(f)
-        with open('q08_gradientboosting_regressor/tests/test_sol.pkl', 'rb') as f:
-            self.solution_func = dill.load(f)
+        self.student_func = student
+        self.solution_func = original
         self.data = 'data/elecdemand.csv'
         self.student_return = self.student_func(self.data)
         self.original_return = self.solution_func(self.data)
@@ -25,14 +17,16 @@ class Testing(unittest.TestCase):
     #  Check the arguements of the function
     def test_timeseries(self):
         # Input parameters tests
-        args = getfullargspec(student)
-        self.assertEqual(len(args[0]), 3, "Expected argument(s) %d, Given %d" % (3, len(args)))
+        args_student = getfullargspec(student)
+        args_original = getfullargspec(original)
+        self.assertEqual(len(args_student[0]),len(args_original[0]),  "Expected argument(s) %d, Given %d" % ( len(args_original[0],len(args_student[0]))))
 
     def test_timeseries_default(self):
-        args = getfullargspec(student)
-        self.assertEqual(args[3], (fe,9), "Expected default values do not match given default values")
+        args_student = getfullargspec(student)
+        args_original = getfullargspec(original)
+        self.assertEqual(args_student[3],args_original[3], "Expected default values do not match given default values")
 
 
     def test_return(self):
-        self.assertEqual(self.student_return, self.original_return, "The return values do not match expected values")
+        self.ssertAlmostEqual(self.student_return, self.original_return, "The return values do not match expected values")
 
