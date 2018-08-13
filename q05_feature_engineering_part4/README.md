@@ -10,8 +10,8 @@ Visualizing is the key to extract insights from the data. We will use matplotlib
 - Convert the time_col to datetime format using pandas to_datetime api
 - Extract the **hour** from time_col (int)
 - Extract the **month** from time_col (int)
-- Make a new column `Peakhours` whose value is **1** if value of the `hour` column created in the above steps is in the range     (6,20). Else set it to **0**.
-- Make a new column `Peakmonths` whose value is **1** if value of the `month` column created in the above steps is in the range   ['Feb', May', 'June', 'July', 'August'] . Else set it to **0**.
+- Make a new column `Peakhours` whose value is **1** if value of the `hour` column created in the above steps is in the range     (6,20). Else set it to **0**. **Note that 20 will not be included in the range(6,20)**
+- Make a new column `Peakmonths` whose value is **1** if value of the `month` column created in the above steps is in the range   ['Feb', May', 'Jun', 'Jul', 'Aug'] . Else set it to **0**.
 - Return the new dataframe.
 
 
