@@ -7,15 +7,15 @@
 * Extract the values of the train and test for only the given column names.
 * Fits a RandomForest model with default parameters model on it.
 * Returns the mean RMSE.
-* Set random_state equal to **9** inside the function parameter.
-
+* Set random_state equal to **10** inside the function parameter.
+* Set the hyperparameters for RandomForestRegressor as 'n_estimators=50, min_samples_leaf=30, random_state=random)state'
 ### Parameters:
 
 | Parameter | dtype | argument type | default value | description |
 | --- | --- | --- | --- | --- |
 | path | str | compulsory | | file path of the csv file |
 | column_names | list | compulsory | ["WorkDay", "Peakhours", "Peakmonths"] | columns whose values are to be considered |
-
+|random_state|integer|compulsory|10|random state for the algorithm|
 
 ### Returns:
 
