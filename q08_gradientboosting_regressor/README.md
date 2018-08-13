@@ -16,7 +16,7 @@
 | --- | --- | --- | --- | --- |
 | path | str | compulsory | | file path of the csv file |
 | column_names | list | compulsory | ["WorkDay", "Peakhours", "Peakmonths"] | columns whose values are to be considered |
-
+|random_state|integer|compulsory|9|random state for the algorithm|
 
 ### Returns:
 
