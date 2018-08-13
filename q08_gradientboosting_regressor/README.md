@@ -8,6 +8,7 @@
 * Fits a Gradient Boosting regressor with default parameters model on it.
 * Returns the mean RMSE.
 * Set random_state equal to **9** inside the function parameter.
+* Set the hyperparameters for GradientBoosting Regressor as 'n_estimators=200, min_samples_leaf=10, learning_rate=0.01, random_state=random_state`
 
 ### Parameters:
 
