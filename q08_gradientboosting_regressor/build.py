@@ -20,7 +20,7 @@ def q08_gradientboosting_regressor(path,columns = fe, random_state =9):
         valid = i[1]
         x_train, y_train = data[fe].values[train], data['Demand'].values[train]
         x_valid, y_valid = data[fe].values[valid], data['Demand'].values[valid]
-        model = GradientBoostingRegressor()
+        model = GradientBoostingRegressor(n_estimators=200,min_samples_leaf=10,learning_rate=0.01,random_state=9)
         model.fit(x_train, y_train)
         pred = model.predict(x_valid)
         measure = math.pow(mean_squared_error(y_valid, pred), 0.5)
